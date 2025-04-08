@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- GLOBALLY USED STRINGS [OVER MULTIPLE MODULES] [!need override!] -->
+    <string name="app_name" translatable="false" />
+    <string name="city_name" translatable="false" />
+
+    <string name="global_share_via"/>
+    <string name="global_share_text"/>
+    <string name="global_back"/>
+    <string name="global_search"/>
+    <string name="global_ok"/>
+    <string name="global_success"/>
+    <string name="global_cancel"/>
+    <string name="global_shared_with"/>
+    <string name="global_share"/>
+    <string name="global_add_to_calendar"/>
+    <string name="global_yes"/>
+    <string name="global_no"/>
+    <string name="global_try_again"/>
+    <string name="global_select_date"/>
+    <string name="global_select_time"/>
+    <string name="global_today"/>
+    <string name="global_tomorrow"/>
+    <string name="global_x_days_ago"/>
+    <string name="global_webview_title"/>
+    <string name="global_over_1_month_ago"/>
+    <string name="global_data_privacy"/>
+    <string name="global_appointment_city"/>
+    <string name="global_no_data_at_moment"/>
+    <string name="global_placeholder"/>
+    <string name="global_show_more"/>
+    <string name="global_show_all"/>
+    <string name="global_show_less"/>
+    <string name="global_error_dialog_title"/>
+    <string name="global_try_later"/>
+    <string name="global_dismiss"/>
+    <string name="global_loading"/>
+    <string name="global_close_button"/>
+    <string name="global_monday"/>
+    <string name="global_tuesday"/>
+    <string name="global_wednesday"/>
+    <string name="global_thursday"/>
+    <string name="global_friday"/>
+    <string name="global_saturday"/>
+    <string name="global_sunday"/>
+    <string name="global_mail_subject"/>
+    <string name="global_mail_title"/>
+    <string name="global_website_title"/>
+    <string name="global_phone_title"/>
+    <string name="global_contact_message"/>
+    <string name="global_contact_name"/>
+    <string name="global_contact_mail"/>
+    <string name="global_contact_phone"/>
+    <string name="privacy_text"/>
+    <string name="privacy_text_before"/>
+    <string name="privacy_text_clickable"/>
+    <string name="privacy_text_after"/>
+    <string name="essentials_measure_kilometer"/>
+    <string name="essentials_measure_meter"/>
+    <string name="essentials_dialog_title_confirm"/>
+    <string name="essentials_content_description_back_arrow"/>
+    <string name="essentials_content_description_share"/>
+    <string name="essentials_value_date_time_today"/>
+    <string name="essentials_value_date_time_tomorrow"/>
+    <string name="essentials_value_date_time"/>
+    <string name="essentials_fetching_data"/>
+    <string name="global_direction_north"/>
+    <string name="global_direction_northeast"/>
+    <string name="global_direction_east"/>
+    <string name="global_direction_southeast"/>
+    <string name="global_direction_south"/>
+    <string name="global_direction_southwest"/>
+    <string name="global_direction_west"/>
+    <string name="global_direction_northwest"/>
+    <string name="global_direction_unknown"/>
+    <string name="global_select_from_gallery"/>
+    <string name="global_open_camera"/>
+    <string name="global_clear"/>
+
+    <string name="global_open_hours"/>
+    <string name="global_contact"/>
+    <string name="global_description"/>
+    <string name="global_route"/>
+
+    <string name="global_show_route"/>
+
+    <string name="global_send_button"/>
+
+    <string name="global_no_result"/>
+    <string name="global_retry"/>
+
+    <string name="global_name_missing_hint"/>
+    <string name="global_email_missing_hint"/>
+    <string name="global_message_missing_hint"/>
+    <string name="global_dataprivacy_missing_hint"/>
+    <string name="global_phone_missing_hint"/>
+
+    <string name="notification_status_message"/>
+    <string name="global_on"/>
+    <string name="global_off"/>
+    <string name="global_no_location"/>
+    <string name="global_minute_abbreviation"/>
+    <string name="global_no_internet" />
+    <string name="global_yesterday" />
+
+    <string name="error_socket_timeout">Der Vorgang konnte nicht abgeschlossen werden. Bitte überprüfen Sie Ihre Internetverbindung.</string>
+    <string name="error_not_processable">Es war nicht möglich, diese Operation durchzuführen.</string>
+    <string name="error_not_found">Nicht gefunden. Bitte versuchen Sie es später noch einmal.</string>
+    <string name="error_unknown">Der Vorgang konnte nicht abgeschlossen werden. Bitte versuchen Sie es später noch einmal. Wenn das Problem weiterhin besteht, kontaktieren Sie uns.</string>
+    <string name="error_network">Der Vorgang konnte nicht abgeschlossen werden. Überprüfen Sie Ihre Verbindung und versuchen Sie es erneut.</string>
+    <string name="error_unprocessable">Der Vorgang konnte nicht abgeschlossen werden. Die folgenden Probleme sind aufgetreten:\n\n%s</string>
+
+
+</resources>

@@ -1,0 +1,140 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'androidx.navigation.safeargs'
+    id 'kotlin-parcelize'
+    id 'org.jetbrains.dokka'
+    id 'kotlin-kapt'
+    id 'com.google.dagger.hilt.android'
+    id 'org.jetbrains.kotlin.plugin.compose'
+}
+
+android {
+    namespace 'de.osca.android.essentials'
+
+    defaultConfig {
+        minSdk 26
+        compileSdk 35
+        targetSdk 35
+        versionCode 1
+        versionName version_essentials
+        proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+    }
+
+    buildFeatures {
+        compose true
+        dataBinding true
+        buildConfig true
+        androidResources true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+
+        kotlin {
+            kotlinOptions {
+                freeCompilerArgs += "-opt-in=kotlin.RequiresOptIn"
+            }
+        }
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.core:core-ktx:1.15.0'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.8.7'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7'
+    implementation 'androidx.navigation:navigation-fragment-ktx:$compose_navigation_version'
+    implementation 'androidx.navigation:navigation-ui-ktx:$compose_navigation_version'
+    implementation("androidx.fragment:fragment-ktx:1.8.6")
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+    implementation "co.infinum:retromock:1.1.1"
+
+    // Gson
+    implementation("com.google.code.gson:gson:2.10.1")
+
+    // OkHttp
+    implementation("com.squareup.okhttp3:okhttp:$okhttp3_version")
+
+    // Accompanist
+    implementation "com.google.accompanist:accompanist-systemuicontroller:$accompanist_version"
+    implementation "com.google.accompanist:accompanist-insets-ui:$accompanist_version"
+    implementation "com.google.accompanist:accompanist-pager:$accompanist_version"
+
+    // Compose
+    implementation "androidx.compose.ui:ui:$compose_version"
+    implementation "androidx.compose.ui:ui-tooling:$compose_version"
+    implementation "androidx.compose.runtime:runtime:$compose_version"
+    implementation "androidx.compose.material:material:$compose_version"
+    implementation "androidx.compose.material:material-ripple:$compose_version"
+    implementation "androidx.compose.foundation:foundation:$compose_version"
+
+    // Compose Dialogs
+    implementation "io.github.vanpra.compose-material-dialogs:core:$material_dialog_version"
+    implementation "io.github.vanpra.compose-material-dialogs:datetime:$material_dialog_version"
+
+    // Navigation
+    implementation("androidx.navigation:navigation-compose:$compose_navigation_version")
+
+    // Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlin_coroutines_version")
+
+    // Images
+    implementation("io.coil-kt:coil-compose:2.6.0")
+
+    // Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+    implementation 'com.squareup.retrofit2:converter-gson:2.10.0'
+
+    // Gson
+    implementation("com.google.code.gson:gson:2.10.1")
+
+    // Compose Hilt / DI
+    implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt "com.google.dagger:hilt-compiler:$hilt_version"
+
+    testImplementation("com.google.dagger:hilt-android-testing:$hilt_version")
+    kaptTest("com.google.dagger:hilt-android-compiler:$hilt_version")
+    androidTestImplementation("com.google.dagger:hilt-android-testing:$hilt_version")
+    kaptAndroidTest("com.google.dagger:hilt-android-compiler:$hilt_version")
+
+    // Google Maps
+    implementation("com.google.android.gms:play-services-location:21.3.0")
+
+    implementation "com.google.maps.android:maps-compose:5.0.3"
+    implementation "com.google.android.gms:play-services-maps:19.1.0"
+
+    // DataStore Preferences
+    implementation "androidx.datastore:datastore-preferences:1.1.3"
+
+    // Date / Time
+    implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.0-RC.2")
+
+    // Parse
+    implementation "com.github.parse-community.Parse-SDK-Android:parse:$parse_version"
+    implementation "com.github.parse-community.Parse-SDK-Android:ktx:$parse_version"
+
+    // Kotlin reflection
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+
+    // Worker manager
+    implementation "androidx.work:work-runtime-ktx:2.10.0"
+    implementation "androidx.hilt:hilt-work:1.2.0"
+
+    implementation "androidx.compose.material:material-icons-extended:$compose_version"
+}
+
+tasks.dokkaHtml.configure {
+    outputDirectory.set(new File(buildDir.absolutePath, "dokka"))
+}
